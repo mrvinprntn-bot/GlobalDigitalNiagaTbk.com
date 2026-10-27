@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PT Global Niaga Tbk — solusi pengembangan bisnis e-commerce dan merchant.">
+<title>PT Global Niaga Tbk | E-Commerce Growth Solutions</title>
+<style>
+:root{--purple:#9270f2;--purple-dark:#7653dc;--ink:#2d2348;--muted:#706889;--lavender:#f6f0ff;--line:#e8def7;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(1070px,92%);margin:auto}
+.topline{height:29px;background:#f0e5ff;color:#69558f;font-size:10px;letter-spacing:.5px;display:flex;align-items:center;justify-content:center;gap:16px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{height:79px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:15px;font-weight:800;font-size:24px;letter-spacing:.2px;line-height:1.05}
+.brand-mark{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(135deg,#b99cff,#7754df);color:#fff;font-size:23px;font-weight:900;transform:rotate(-5deg);box-shadow:0 8px 20px #9270f233}
+.brand small{display:block;font-size:9px;letter-spacing:5px;color:#9270c7;margin-top:7px;font-weight:600}
+.navlinks{display:flex;align-items:center;gap:27px;font-size:12px;color:#44365f}
+.navlinks a:hover{color:var(--purple-dark)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:10px;background:var(--purple);color:#fff;font-size:12px;font-weight:700;box-shadow:0 8px 20px #9270f226;transition:.2s;border:0;cursor:pointer}
+.btn:hover{background:var(--purple-dark);transform:translateY(-2px)}
+.btn-plain{background:transparent;color:var(--ink);box-shadow:none;border-bottom:1px solid #d7c9ee;border-radius:0;padding:12px 0}
+.hero{background:radial-gradient(ellipse at 75% 30%,#e5d8ff 0%,transparent 47%),linear-gradient(120deg,#f0defb,#fbf7ff 90%);padding:92px 0 82px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.kicker{font-size:9px;font-weight:800;letter-spacing:2px;color:#8a6bd1;margin-bottom:22px}
+.kicker:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--purple);margin:0 10px 1px 0}
+h1{font-size:clamp(42px,5vw,64px);letter-spacing:-2.8px;line-height:1.06;margin-bottom:26px}
+.accent{color:#8967e6}
+.hero p,.body-copy{font-size:14px;color:var(--muted);line-height:1.9}
+.hero-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:28px}
+.mini-points{display:flex;flex-wrap:wrap;gap:18px;margin-top:29px;font-size:9px;color:#776b91}
+.dashboard-wrap{position:relative;padding:15px 0}
+.orbit{position:absolute;inset:-38px -18px;border:1px solid #d8c7fb;border-radius:50%;opacity:.7;transform:rotate(-12deg)}
+.dashboard{position:relative;padding:23px;background:linear-gradient(140deg,#a68cff,#8b72f3);color:white;border-radius:14px;box-shadow:0 28px 65px #7350bd35;transform:rotate(-2.5deg)}
+.dash-head{display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:700}
+.pill{font-size:8px;border:1px solid #ffffff75;border-radius:30px;padding:5px 9px}
+.dash-label{font-size:10px;margin-top:27px}
+.chart{height:180px;margin-top:14px;position:relative;border-bottom:1px solid #ffffff25;background:repeating-linear-gradient(to bottom,transparent 0,transparent 39px,#ffffff1b 40px)}
+.chart svg{width:100%;height:100%;overflow:visible}
+.chart-labels{display:flex;justify-content:space-between;font-size:8px;margin-top:8px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:21px}
+.stat{border-top:1px solid #ffffff35;padding-top:12px;font-size:9px}
+.stat strong{display:block;font-size:20px;margin-top:4px}
+.floating-note{position:absolute;right:-18px;bottom:-14px;padding:14px 17px;background:#fff;color:#4a367e;border-radius:10px;box-shadow:0 12px 35px #49316d20;font-size:10px}
+.floating-note strong{display:block;font-size:11px}
+.marketplaces{background:#fbf8ff;padding:36px 0 45px;border-bottom:1px solid var(--line);text-align:center}
+.market-label{font-size:9px;letter-spacing:2px;color:#7c679e;margin-bottom:22px}
+.market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.market{min-height:145px;padding:22px 17px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--color);border-radius:14px;text-align:left;box-shadow:0 5px 0 #e9e1f3}
+.market-logo{height:65px;display:flex;align-items:center;justify-content:center;font-size:clamp(17px,2vw,25px);font-weight:800;color:var(--color);letter-spacing:-.8px}
+.market-foot{border-top:1px solid #f0ebf6;padding-top:12px;display:flex;justify-content:space-between;gap:10px;font-size:9px;color:#776b91}
+.market-note{font-size:10px;color:#82769a;margin-top:24px}
+section{padding:78px 0}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.section-no{font-size:9px;letter-spacing:2px;color:#8967d6;font-weight:800;margin-bottom:20px}
+h2{font-size:clamp(31px,3.5vw,43px);line-height:1.18;letter-spacing:-1.5px;margin-bottom:20px}
+.about-right h3{font-size:17px;font-weight:500;margin-bottom:18px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:50px}
+.step{border-top:1px solid var(--line);padding-top:20px}
+.step .tag{font-size:9px;letter-spacing:2px;color:#9878e7;margin-bottom:13px}
+.step h3{font-size:14px;margin-bottom:10px}
+.step p{font-size:11px;line-height:1.8;color:var(--muted)}
+.solutions{background:#f7f2ff}
+.section-top{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:38px}
+.section-top .side-copy{max-width:220px;color:var(--muted);font-size:12px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service{background:#fff;border:1px solid var(--line);border-radius:9px;padding:23px 24px;min-height:230px;display:flex;flex-direction:column}
+.service-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.icon{width:38px;height:38px;border-radius:9px;background:#eee4ff;color:#9472e8;display:grid;place-items:center;font-size:19px}
+.number{font-size:9px;color:#a79abf}
+.service h3{font-size:14px;margin-bottom:11px}
+.service p{font-size:11px;line-height:1.8;color:var(--muted)}
+.service-foot{margin-top:auto;padding-top:15px;border-top:1px solid #f0ebf6;font-size:9px;color:#817494}
+.notice{margin-top:20px;border:1px solid #e3d5ff;background:#f1e8ff;border-radius:5px;padding:16px 18px;font-size:10px;color:#6f5b91}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:38px}
+.process{border-top:1px solid var(--line);padding-top:20px}
+.process .num{color:#9673e6;font-size:12px;margin-bottom:18px}
+.process h3{font-size:14px;margin-bottom:10px}
+.process p{font-size:11px;color:var(--muted);line-height:1.8}
+.mission{background:linear-gradient(120deg,#a18af8,#8c70ed);color:white;padding:62px 0}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.mission .section-no{color:#f2eaff}
+.mission p{font-size:13px;line-height:1.9;color:#fff}
+.mission-list{border-left:1px solid #ffffff55;padding-left:32px}
+.mission-list h3{font-size:15px;margin-bottom:18px}
+.mission-list p{font-size:11px;margin:10px 0}
+.profile-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}
+.profile-card{border:1px solid var(--line);border-radius:16px;padding:25px;background:#fdfbff;box-shadow:0 14px 40px #60429a0a}
+.profile-head{display:flex;align-items:center;gap:16px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.profile-head .brand-mark{flex-shrink:0}
+.profile-head h3{font-size:16px}
+.profile-head p{font-size:10px;color:var(--muted)}
+.profile-row{display:flex;justify-content:space-between;gap:18px;padding:15px 0;border-bottom:1px solid var(--line);font-size:11px}
+.profile-row span{color:var(--muted)}
+.profile-row strong{text-align:right;font-size:11px}
+.profile-card details{padding-top:18px;font-size:11px;color:var(--purple-dark)}
+.profile-card summary{cursor:pointer;font-weight:700}
+.profile-card details p{margin-top:12px;color:var(--muted);line-height:1.8}
+footer{background:#f5edff;padding:45px 0 20px;color:#6e6287}
+.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr 1fr;gap:38px;padding-bottom:38px}
+.footer-grid h4{font-size:12px;color:var(--ink);margin-bottom:13px}
+.footer-grid a,.footer-grid p{display:block;font-size:11px;margin:9px 0;line-height:1.8}
+.footer-grid a:hover{color:var(--purple-dark)}
+.footer-bottom{border-top:1px solid #e0d3f1;padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:10px}
+.whatsapp{position:fixed;right:20px;top:52%;z-index:30;width:58px;height:58px;border-radius:18px;background:linear-gradient(145deg,#43e78a,#008b48);color:#fff;display:grid;place-items:center;font-size:28px;box-shadow:0 8px 25px #009f5a55;border:3px solid #b9ffd5}
+@media(max-width:800px){.topline{font-size:8px}.nav{height:70px}.brand{font-size:18px}.brand-mark{width:40px;height:40px}.navlinks{gap:14px}.navlinks>a:not(.btn){display:none}.hero{padding:65px 0}.hero-grid{grid-template-columns:1fr;gap:45px}.dashboard-wrap{max-width:540px;width:100%;margin:auto}.market-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.profile-grid{grid-template-columns:1fr;gap:28px}.steps,.process-grid{grid-template-columns:repeat(2,1fr)}.section-top{align-items:start;flex-direction:column}.service-grid{grid-template-columns:repeat(2,1fr)}.mission-grid{grid-template-columns:1fr;gap:30px}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.topline{gap:7px}.brand{font-size:15px;gap:9px}.brand small{letter-spacing:3px}.navlinks .btn{padding:11px 13px;font-size:10px}.hero h1{letter-spacing:-2px}.market-grid,.service-grid,.steps,.process-grid{grid-template-columns:1fr}.market{min-height:120px}.market-logo{height:50px}.stats{gap:7px}.stat strong{font-size:16px}.floating-note{right:-4px}.footer-grid{grid-template-columns:1fr 1fr;gap:24px}.profile-row{flex-direction:column;gap:4px}.profile-row strong{text-align:left}.whatsapp{width:50px;height:50px;right:13px}}
+</style>
+</head>
+<body>
+<div class="topline"><span>PT GLOBAL NIAGA Tbk</span><span>•</span><span>E-Commerce Growth &amp; Merchant Solutions</span></div>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#beranda" aria-label="PT Global Niaga Tbk">
+      <span class="brand-mark">G<span style="font-size:13px">+</span></span>
+      <span>GLOBAL NIAGA<small>DIGITAL</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a><a href="#solusi">Solusi</a><a href="#proses">Cara kerja</a><a href="#perusahaan">Perusahaan</a>
+      ```html
+<a class="btn-join" href="https://globaldigitalniaga.id/index/user/register">
+    Bergabung ↗
+</a>
+```
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="beranda">
+ <div class="container hero-grid">
+  <div>
+   <div class="kicker">E-COMMERCE GROWTH &amp; MERCHANT SOLUTIONS</div>
+   <h1>Grow beyond<br>the <span class="accent">marketplace.</span></h1>
+   <p>Bawa bisnis Anda ke langkah berikutnya. PT Global Niaga Tbk membantu merchant berkembang melalui strategi, data, dan operasional e-commerce yang lebih terarah.</p>
+   <div class="hero-actions"><a class="btn" href="#kontak">Jadi merchant ↗</a><a class="btn btn-plain" href="#solusi">Jelajahi solusi&nbsp; →</a></div>
+   <div class="mini-points"><span>✓ Berbasis data</span><span>⌁ Fokus pada merchant</span><span>↗ Pertumbuhan berkelanjutan</span></div>
+  </div>
+  <div class="dashboard-wrap">
+   <div class="orbit"></div>
+   <div class="dashboard">
+    <div class="dash-head"><span>▣ &nbsp; Merchant overview</span><span class="pill">RINGKASAN</span></div>
+    <div class="dash-label">Performa penjualan</div>
+    <div style="margin-top:10px;font-size:10px"><span style="display:inline-block;width:28px;border-top:3px solid white;vertical-align:middle;margin-right:12px"></span><b>Performa merchant</b></div>
+    <div style="font-size:8px;margin-top:8px;opacity:.9">Ilustrasi metrik bisnis</div>
+    <div class="chart"><svg viewBox="0 0 400 160" preserveAspectRatio="none" aria-label="Ilustrasi grafik pertumbuhan"><polyline points="0,145 45,120 90,130 135,82 180,91 225,52 270,62 315,20 360,32 400,0" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div>
+    <div class="chart-labels"><span>Minggu 1</span><span>Minggu 2</span><span>Minggu 3</span><span>Minggu 4</span></div>
+    <div class="stats"><div class="stat">Pesanan<strong>—</strong></div><div class="stat">Konversi<strong>—</strong></div><div class="stat">ROAS<strong>—</strong></div></div>
+   </div>
+   <div class="floating-note"><strong>✦ &nbsp; Strategi yang terukur</strong><span>Dari insight menjadi aksi.</span></div>
+  </div>
+ </div>
+</section>
+<section class="marketplaces">
+ <div class="container">
+  <div class="market-label">ONE PARTNER. MULTIPLE MARKETPLACES.</div>
+  <div class="market-grid">
+   <article class="market" style="--color:#f04c32"><div class="market-logo">▢ Shopee</div><div class="market-foot"><span>Marketplace commerce</span><span>↗</span></div></article>
+   <article class="market" style="--color:#28b84a"><div class="market-logo">tokopedia</div><div class="market-foot"><span>Brand &amp; merchant growth</span><span>↗</span></div></article>
+   <article class="market" style="--color:#6835d9"><div class="market-logo">◆ Lazada</div><div class="market-foot"><span>Multi-channel strategy</span><span>↗</span></div></article>
+   <article class="market" style="--color:#00b9cf"><div class="market-logo">▣ blibli</div><div class="market-foot"><span>Social commerce</span><span>↗</span></div></article>
+  </div>
+  <p class="market-note">Nama dan merek marketplace merupakan milik pemegang merek masing-masing. Penyebutan tidak menyatakan afiliasi atau kemitraan resmi.</p>
+ </div>
+</section>
+<section id="tentang">
+ <div class="container">
+  <div class="about-grid">
+   <div><div class="section-no">01 / TENTANG GLOBAL NIAGA</div><h2>Your e-commerce<br><span class="accent">growth partner.</span></h2></div>
+   <div class="about-right"><h3>Produk yang baik layak mendapatkan strategi yang baik.</h3><p class="body-copy">PT Global Niaga Tbk berfokus pada solusi e-commerce untuk merchant dan brand, dengan strategi yang terukur dan ruang lingkup kerja yang jelas. Dari kualitas katalog hingga pengalaman pelanggan, setiap langkah diarahkan pada pertumbuhan bisnis yang berkelanjutan.</p><p class="body-copy" style="margin-top:14px">Merchant tetap menjadi pemilik produk dan toko. Layanan dilaksanakan berdasarkan ruang lingkup kerja sama yang disepakati.</p></div>
+  </div>
+  <div class="steps">
+   <div class="step"><div class="tag">GROW</div><h3>Temukan potensi baru.</h3><p>Strategi penjualan yang disesuaikan dengan tahap bisnis Anda.</p></div>
+   <div class="step"><div class="tag">OPTIMIZE</div><h3>Perbaiki setiap detail.</h3><p>Katalog, promosi, dan operasional toko yang lebih terstruktur.</p></div>
+   <div class="step"><div class="tag">ANALYZE</div><h3>Baca data. Ambil langkah.</h3><p>Keputusan berdasarkan performa aktual, bukan asumsi.</p></div>
+   <div class="step"><div class="tag">SCALE</div><h3>Perluas jangkauan.</h3><p>Kembangkan bisnis melalui berbagai kanal e-commerce.</p></div>
+  </div>
+ </div>
+</section>
+<section class="solutions" id="solusi">
+ <div class="container">
+  <div class="section-no">02 / SOLUSI MERCHANT</div>
+  <div class="section-top"><h2>Everything you need<br>to <span class="accent">grow online.</span></h2><p class="side-copy">Dukungan menyeluruh untuk bisnis Anda, dari etalase hingga evaluasi performa.</p></div>
+  <div class="service-grid">
+   <article class="service"><div class="service-top"><span class="icon">▦</span><span class="number">01</span></div><h3>Marketplace Management</h3><p>Pengelolaan katalog, harga, informasi produk, dan operasional toko di berbagai marketplace.</p><div class="service-foot">Katalog · Operasional · Monitoring</div></article>
+   <article class="service"><div class="service-top"><span class="icon">◇</span><span class="number">02</span></div><h3>Product Optimization</h3><p>Optimasi judul, deskripsi, kategori, atribut, visual produk, variasi, dan strategi bundling.</p><div class="service-foot">Konten · Keyword · Konversi</div></article>
+   <article class="service"><div class="service-top"><span class="icon">↗</span><span class="number">03</span></div><h3>Digital Advertising</h3><p>Perencanaan dan evaluasi iklan berdasarkan traffic, biaya per pesanan, dan ROAS.</p><div class="service-foot">Iklan · Anggaran · Evaluasi</div></article>
+   <article class="service"><div class="service-top"><span class="icon">✦</span><span class="number">04</span></div><h3>Campaign Management</h3><p>Strategi voucher, flash sale, payday campaign, promosi musiman, dan peluncuran produk.</p><div class="service-foot">Promosi · Campaign · Bundling</div></article>
+   <article class="service"><div class="service-top"><span class="icon">♡</span><span class="number">05</span></div><h3>Customer Experience</h3><p>Perbaikan respons pelanggan, pengelolaan keluhan, after-sales, dan evaluasi feedback.</p><div class="service-foot">Pelayanan · Kepuasan · Reputasi</div></article>
+   <article class="service"><div class="service-top"><span class="icon">◷</span><span class="number">06</span></div><h3>Data &amp; Analytics</h3><p>Analisis penjualan, pesanan, konversi, efektivitas iklan, dan pelanggan berulang.</p><div class="service-foot">Insight · Laporan · Strategi</div></article>
+  </div>
+  <div class="notice">✓ &nbsp; <strong>Pertumbuhan yang dapat dipertanggungjawabkan.</strong> Reputasi dibangun melalui pengalaman pelanggan yang baik, tanpa ulasan palsu atau manipulasi rating.</div>
+ </div>
+</section>
+<section id="proses">
+ <div class="container">
+  <div class="section-no">03 / CARA KERJA</div>
+  <div class="section-top"><h2>A clear path.<br><span class="accent">A shared ambition.</span></h2><p class="side-copy">Dari memahami bisnis Anda hingga menyempurnakan strategi bersama.</p></div>
+  <div class="process-grid">
+   <div class="process"><div class="num">01</div><h3>Kenali bisnis</h3><p>Pengajuan kerja sama dan assessment produk, target pasar, serta kebutuhan merchant.</p></div>
+   <div class="process"><div class="num">02</div><h3>Audit &amp; rencana</h3><p>Analisis toko, katalog, promosi, dan performa untuk menyusun rencana pertumbuhan.</p></div>
+   <div class="process"><div class="num">03</div><h3>Implementasi</h3><p>Onboarding dan penerapan strategi sesuai kesepakatan ruang lingkup layanan.</p></div>
+   <div class="process"><div class="num">04</div><h3>Evaluasi &amp; optimasi</h3><p>Monitoring berkala, penyesuaian strategi, dan laporan perkembangan merchant.</p></div>
+  </div>
+ </div>
+</section>
+<section class="mission" id="perusahaan">
+ <div class="container mission-grid">
+  <div><div class="section-no">OUR NORTH STAR</div><h2>Bisnis yang tumbuh.<br>Hubungan yang bertahan.</h2><p>Visi kami adalah menjadi mitra digital commerce yang tepercaya bagi merchant dan brand Indonesia untuk membangun bisnis yang kompetitif, profesional, dan berkelanjutan.</p></div>
+  <div class="mission-list"><h3>Misi Global Niaga</h3><p>01 &nbsp;&nbsp; Mengembangkan strategi pertumbuhan yang terukur.</p><p>02 &nbsp;&nbsp; Meningkatkan kualitas toko dan pengalaman pelanggan.</p><p>03 &nbsp;&nbsp; Memanfaatkan teknologi dan data untuk efisiensi.</p><p>04 &nbsp;&nbsp; Membangun kemitraan jangka panjang dengan merchant.</p></div>
+ </div>
+</section>
+<section>
+ <div class="container profile-grid">
+  <div><div class="section-no">04 / PROFIL &amp; TRANSPARANSI</div><h2>Kenali mitra<br><span class="accent">pertumbuhan Anda.</span></h2><p class="body-copy">Informasi layanan, identitas, dan ruang lingkup kerja sama perlu disampaikan secara jelas agar calon merchant dapat membuat keputusan yang tepat.</p></div>
+  <div class="profile-card">
+   <div class="profile-head"><span class="brand-mark">G<span style="font-size:13px">+</span></span><div><h3>PT Global Niaga Tbk</h3><p>E-Commerce Growth &amp; Merchant Solutions</p></div></div>
+   <div class="profile-row"><span>Fokus layanan</span><strong>Pengelolaan &amp; pengembangan e-commerce</strong></div>
+   <div class="profile-row"><span>Merchant</span><strong>UMKM, brand, reseller &amp; distributor</strong></div>
+   <div class="profile-row"><span>Pendekatan</span><strong>Strategi · Data · Pengalaman pelanggan</strong></div>
+   <details><summary>Informasi perusahaan &amp; alamat　＋</summary><p>Lengkapi bagian ini dengan alamat resmi, nomor registrasi, dan informasi perusahaan yang telah diverifikasi sebelum dipublikasikan.</p></details>
+  </div>
+ </div>
+</section>
+<section id="kontak" style="padding-top:10px">
+ <div class="container" style="background:#f7f1ff;border:1px solid var(--line);border-radius:14px;padding:32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+  <div><div class="section-no">MARI TUMBUH BERSAMA</div><h2 style="font-size:30px;margin-bottom:8px">Mulai diskusi bisnis Anda.</h2><p class="body-copy">Hubungi tim Anda melalui kanal kontak resmi yang telah diverifikasi.</p></div>
+  <a class="btn" href="mailto:info@example.com?subject=Konsultasi%20E-commerce">Hubungi Kami ↗</a>
+ </div>
+</section>
+</main>
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div><a class="brand" href="#beranda"><span class="brand-mark">G<span style="font-size:13px">+</span></span><span>GLOBAL NIAGA<small>DIGITAL</small></span></a><p style="margin-top:20px">Empowering Merchants.<br>Accelerating Commerce.</p></div>
+   <div><h4>Jelajahi</h4><a href="#tentang">Tentang kami</a><a href="#solusi">Solusi merchant</a><a href="#proses">Cara kerja</a></div>
+   <div><h4>Perusahaan</h4><a href="#perusahaan">Profil perusahaan</a><a href="#perusahaan">Transparansi</a>```html
+<a href="https://wa.me/6282165172406" target="_blank" rel="noopener noreferrer">
+    Hubungi kami
+</a>
+```</div>
+   <div><h4>Mari tumbuh bersama.</h4><p>Strategi e-commerce yang disesuaikan untuk kebutuhan bisnis Anda.</p><a href="#kontak" style="color:#8a68dc">Mulai diskusi　↗</a></div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year"></span> PT Global Niaga Tbk.</span><span>Empowering Merchants. Accelerating Commerce.</span><a href="#beranda">Kembali ke atas ↑</a></div>
+ </div>
+</footer>
+<a class="whatsapp" href="https://wa.me/" aria-label="Hubungi melalui WhatsApp" title="WhatsApp">◉</a>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
