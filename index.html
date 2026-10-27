@@ -108,6 +108,31 @@ footer{background:#f5edff;padding:45px 0 20px;color:#6e6287}
 .whatsapp{position:fixed;right:20px;top:52%;z-index:30;width:58px;height:58px;border-radius:18px;background:linear-gradient(145deg,#43e78a,#008b48);color:#fff;display:grid;place-items:center;font-size:28px;box-shadow:0 8px 25px #009f5a55;border:3px solid #b9ffd5}
 @media(max-width:800px){.topline{font-size:8px}.nav{height:70px}.brand{font-size:18px}.brand-mark{width:40px;height:40px}.navlinks{gap:14px}.navlinks>a:not(.btn){display:none}.hero{padding:65px 0}.hero-grid{grid-template-columns:1fr;gap:45px}.dashboard-wrap{max-width:540px;width:100%;margin:auto}.market-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.profile-grid{grid-template-columns:1fr;gap:28px}.steps,.process-grid{grid-template-columns:repeat(2,1fr)}.section-top{align-items:start;flex-direction:column}.service-grid{grid-template-columns:repeat(2,1fr)}.mission-grid{grid-template-columns:1fr;gap:30px}.footer-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:500px){.topline{gap:7px}.brand{font-size:15px;gap:9px}.brand small{letter-spacing:3px}.navlinks .btn{padding:11px 13px;font-size:10px}.hero h1{letter-spacing:-2px}.market-grid,.service-grid,.steps,.process-grid{grid-template-columns:1fr}.market{min-height:120px}.market-logo{height:50px}.stats{gap:7px}.stat strong{font-size:16px}.floating-note{right:-4px}.footer-grid{grid-template-columns:1fr 1fr;gap:24px}.profile-row{flex-direction:column;gap:4px}.profile-row strong{text-align:left}.whatsapp{width:50px;height:50px;right:13px}}
+.company-info {
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.company-info-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.company-info-row span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.company-info-row strong {
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
 </style>
 </head>
 <body>
@@ -220,7 +245,37 @@ footer{background:#f5edff;padding:45px 0 20px;color:#6e6287}
    <div class="profile-row"><span>Fokus layanan</span><strong>Pengelolaan &amp; pengembangan e-commerce</strong></div>
    <div class="profile-row"><span>Merchant</span><strong>UMKM, brand, reseller &amp; distributor</strong></div>
    <div class="profile-row"><span>Pendekatan</span><strong>Strategi · Data · Pengalaman pelanggan</strong></div>
-   <details><summary>Informasi perusahaan &amp; alamat　＋</summary><p>Lengkapi bagian ini dengan alamat resmi, nomor registrasi, dan informasi perusahaan yang telah diverifikasi sebelum dipublikasikan.</p></details>
+   <details>
+  <summary>Informasi perusahaan &amp; alamat　＋</summary>
+
+  <div class="company-info">
+    <div class="company-info-row">
+      <span>Nama badan hukum</span>
+      <strong>PT. GLOBAL DIGITAL NIAGA Tbk</strong>
+    </div>
+
+    <div class="company-info-row">
+      <span>Status nama badan hukum</span>
+      <strong>Direncanakan</strong>
+    </div>
+
+    <div class="company-info-row">
+      <span>Tahun berdiri</span>
+      <strong>2010 — Jakarta</strong>
+    </div>
+
+    <div class="company-info-row">
+      <span>Alamat kantor pusat</span>
+      <strong>
+        Jl. Jendral Ahmad Yani No. 34,
+        Kelurahan Panjunan,
+        Kecamatan Kota Kudus,
+        Kabupaten Kudus,
+        Jawa Tengah 59317
+      </strong>
+    </div>
+  </div>
+</details>
   </div>
  </div>
 </section>
